@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.cdf0fed4.chunk.css",
+    "main.js": "/static/js/main.b8dbdf95.chunk.js",
+    "main.js.map": "/static/js/main.b8dbdf95.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.f2cf99fc.js",
+    "runtime-main.js.map": "/static/js/runtime-main.f2cf99fc.js.map",
+    "static/js/2.0b24484c.chunk.js": "/static/js/2.0b24484c.chunk.js",
+    "static/js/2.0b24484c.chunk.js.map": "/static/js/2.0b24484c.chunk.js.map",
+    "static/js/3.4c010803.chunk.js": "/static/js/3.4c010803.chunk.js",
+    "static/js/3.4c010803.chunk.js.map": "/static/js/3.4c010803.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.cdf0fed4.chunk.css.map": "/static/css/main.cdf0fed4.chunk.css.map",
+    "static/js/2.0b24484c.chunk.js.LICENSE.txt": "/static/js/2.0b24484c.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/static/media/background_stars.2f654a73.png",
+    "static/media/planet.scss": "/static/media/earth.2d643cc1.png",
+    "static/media/h.png": "/static/media/h.403a7715.png",
+    "static/media/hr.png": "/static/media/hr.eb64bd18.png",
+    "static/media/lc.png": "/static/media/lc.c72fbdf6.png",
+    "static/media/lr.png": "/static/media/lr.35bd59c0.png",
+    "static/media/s.png": "/static/media/s.45bdd1d7.png",
+    "static/media/sl.png": "/static/media/sl.cc3795f1.png",
+    "static/media/sn.png": "/static/media/sn.91c4668b.png",
+    "static/media/sunrise.74f961b0.png": "/static/media/sunrise.74f961b0.png",
+    "static/media/sunset.843cc3e5.png": "/static/media/sunset.843cc3e5.png",
+    "static/media/t.png": "/static/media/t.cc4bf7b2.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f2cf99fc.js",
+    "static/js/2.0b24484c.chunk.js",
+    "static/css/main.cdf0fed4.chunk.css",
+    "static/js/main.b8dbdf95.chunk.js"
+  ]
+}

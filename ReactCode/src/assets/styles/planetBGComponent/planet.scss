@@ -1,0 +1,37 @@
+/* PLANET CONTAINER STYLES */
+.planet{
+    position: absolute;
+    width: 115%;
+    height: 110%;
+    top: -10%;
+    left: -15%;
+    background-image: linear-gradient(rgba(22,22,22,0.2), rgba(22,22,22,1)), url('../../images/earth.png');
+    background-repeat: no-repeat;
+}
+
+.planet_animation{
+  opacity: 0;
+  visibility: hidden;
+}
+
+.ZoomIn{
+  animation: animateZoomIn 2000ms linear;
+}
+
+@keyframes animateZoomIn {
+  0%{
+    transform: scale(1);
+    visibility: visible;
+    opacity: 1;
+  }
+  80%{
+    opacity: 0;
+  }
+  100%{
+    transform: scale(10);
+    visibility: hidden;
+    opacity: 0;
+    width: 0%;
+    height: 0%;
+  }
+}

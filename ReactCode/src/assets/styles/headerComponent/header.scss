@@ -1,0 +1,61 @@
+@import "../shared.scss";
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    text-align: center;
+    animation: animationFade 1500ms linear;
+    z-index: 9;
+    color: $primary_text_color;
+    padding: 10%;
+    
+    .title{
+      font-size: 8rem;
+      font-weight: 100;
+    }
+
+    .subtitle{
+      font-size: 1.5rem;
+      font-weight: 400;
+    }
+
+    button{
+      color: $primary_text_color;
+      background-color: $primary_color;
+      border: none;
+      padding: 1rem;
+      border-radius: .2rem;
+      opacity: 1;
+      cursor: pointer;
+      
+      .button-text{
+        display: inline;
+        transition: all 1000ms;
+      }
+    }
+
+    button:hover{
+        .button-text{
+            margin-right: 10px;
+        }
+    }
+}
+
+@media (max-width: 575.98px) {
+  header{
+    height: 100vh;
+    padding: 0%;
+    align-items: center;
+
+    .title{
+      font-size: 3rem;
+    }
+
+    .subtitle{
+      font-size: 1.2rem;
+    }
+  }
+}

@@ -1,0 +1,192 @@
+@import "../shared.scss";
+
+.Weather{
+    width: 80%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 2%;
+    color: $primary_text_color;
+    .title{
+        font-size: 4rem;
+        margin: 0%;
+    }
+
+    .banner{
+        display: flex;
+        width: 96%;
+        min-height: 20%;
+        background-color: rgba($color: #000000, $alpha: 0.6);
+        padding: 2%;
+        overflow-x: scroll;
+        border-radius: 10px;
+
+        .card{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            list-style: none;
+            width: 150px;
+            min-width: 150px;
+            height: 120px;
+            min-height: 120px;
+            background-color: transparent;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 300ms;
+            margin-right: 20px;
+
+            span{
+                width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis; 
+            }
+
+            .zoneTitle{       
+                font-size: 2rem;
+                margin-bottom: 10px;
+            }
+        }
+
+        .card:hover{
+            background-color: $primary_color;
+        }
+    }
+
+    .cities{
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      width: 98%;
+      height: 70px;
+      margin-top: 1%;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: rgba($color: #000000, $alpha: 0.6);
+      overflow-x: scroll;
+      overflow-y: hidden;
+      
+      .cities-card{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 1%;
+        height: 100%;
+        padding: 5px;
+        border-radius: 5px;
+        background-color: transparent;
+        cursor: pointer;
+        transition: all 300ms;
+
+        span{
+          width: 100%;
+          overflow: hidden;
+        }
+      }
+
+      .cities-card:hover{
+        background-color: $primary_color;
+      }
+    }
+
+    .to-Top{
+      display: none;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      bottom: 1%;
+      right: 2%;
+      width: 30px;
+      height: 30px;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: $secondary_color;
+      font-size: 2rem;
+      animation: fadeShow 1000ms linear;
+    }
+  
+    .cities::-webkit-scrollbar-track
+    {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      border-radius: 5px;
+      background-color: transparent;
+    }
+    .cities::-webkit-scrollbar
+    {
+      width: 2px;
+      height: 10px;
+      background-color: transparent;
+    }
+    .cities::-webkit-scrollbar-thumb
+    {
+      border-radius: 5px;
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+      background-color: #888;
+    }
+
+    .banner::-webkit-scrollbar-track
+    {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      border-radius: 5px;
+      background-color: transparent;
+    }
+    .banner::-webkit-scrollbar
+    {
+      width: 2px;
+      height: 10px;
+      background-color: transparent;
+    }
+    .banner::-webkit-scrollbar-thumb
+    {
+      border-radius: 5px;
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+      background-color: #888;
+    }
+}
+
+.Weather::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 5px;
+  background-color: #F5F5F5;
+}
+.Weather::-webkit-scrollbar
+{
+  width: 5px;
+  height: 2px;
+  background-color: #F5F5F5;
+}
+.Weather::-webkit-scrollbar-thumb
+{
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #888;
+}
+
+.active{
+  background-color: $primary_color !important;
+}
+
+@media (max-width: 575.98px) {
+  .Weather{
+    width: 100%;
+    padding-top: 50px;
+
+    .title{
+      font-size: 3rem;
+      margin: 0%;
+    }
+
+    .cities{
+      width: 100%;
+      padding: 0px;
+      margin-top: 3%;
+    }
+
+    .to-Top{
+      display: flex;
+    }
+  }
+}

@@ -1,0 +1,139 @@
+@import '../../shared.scss';
+
+.Stats{
+    width: 98%;
+    margin-top: 1%;
+    border-radius: 5px;
+    min-height: 500px;
+    padding: 13px;
+
+    .time-footer{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 5%;
+        min-height: 125px;
+        max-height: 125px;
+        opacity: 0.7;
+
+        .sun-time{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            width: 50%;
+
+            .img_cointainer{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-right: 2%;
+    
+                img{
+                    width: 80px;
+                    height: 80px;
+                }
+
+                span:last-child{
+                    margin-top: 5px;
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        .currentTime{
+            display: flex;
+            flex-direction: row;
+            justify-content:flex-end;
+            align-items: center;
+            width: 50%;
+
+            span{
+                font-size: 1.2rem;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .time_weather{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px;
+
+        .card_time{
+            width: 180px;
+            min-height: 250px;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: $background_color;
+            border: 1px solid $secondary_color;
+            box-shadow: 0px 0px 5px $primary_color;
+
+
+            .img_container{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                img{
+                    width: 45%;
+                    height: 80px;
+                }
+            }
+
+            h2{
+                width: 100%;
+                min-height: 30px;
+                overflow-x: hidden;
+            }
+
+            h3:first-letter {
+                text-transform: uppercase;
+            }
+
+            .max_min_container{
+                display: flex;
+                flex-direction: column;
+                overflow-x: hidden;
+
+                span{
+                    font-size: 0.8rem;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 575.98px) {
+
+    .Stats{
+        width: 100%;
+        padding: 0px;
+
+        .time_weather{
+            flex-direction: column;
+            align-items: center;
+
+            .card_time{
+                width: 200px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .time-footer{
+            justify-content: flex-end;
+
+            .currentTime{
+                justify-content: flex-end;
+
+                span{
+                    text-align: end;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+}
